@@ -1,0 +1,26 @@
+{
+  "name": "wineapidb",
+  "version": "1.0.0",
+  "description": "Website where users may:\r - find wines or \r - discover how to use a simple and easy RESTful JSON API to access to a wine collection.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libreyextremo/wineapidb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/libreyextremo/wineapidb/issues"
+  },
+  "homepage": "https://github.com/libreyextremo/wineapidb#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mocha": "^4.0.1",
+    "mongoose": "^4.13.4"
+  }
+}

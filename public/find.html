@@ -91,7 +91,7 @@
 			</section>
 		<section class="team-1">
 				<div class="container">			
-                    <div class="row" ng-show="wines.length == 0">Loading countries...</div>
+                    <div class="row" ng-show="wines.length == 0">Loading wines...</div>
 					<div class="row" ng-show="wines.length">
 						<p ng-show="wines.length">It was found {{ wines.length }} in the world</p>
                         <div ng-repeat="wine in wines | filter: searchTerm" class="col-md-2 col-sm-4">
@@ -138,15 +138,8 @@
 		</div>
 		
 		<div class="footer-container">
-					
-			
-		
-			
-		
-			
-		
-			
-		
+			<bottom></bottom>
+            <!--		
 			<footer class="short bg-secondary-1">
 				<div class="container">
 					<div class="row">
@@ -172,6 +165,7 @@
 					</div>
 				</div>
 			</footer>
+            -->
 		</div>
 				
 		<script src="https://www.youtube.com/iframe_api"></script>
@@ -189,7 +183,7 @@
         <script src="js/jquery.countdown.min.js"></script>
         <script src="js/scripts.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-		<script src="./js/findcontroller.js"></script>
+		<script src="js/angular/findcontroller.js"></script>
         
     </body>
 </html>

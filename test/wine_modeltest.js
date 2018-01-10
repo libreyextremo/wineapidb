@@ -214,6 +214,187 @@ describe('Wine collection tests', function(){
       API_url_picture: 'wine_10.jpg'
     });
 
+    var wineRecord11 = new WineModel({
+      API_id: '11',
+      API_winename: 'Sierra Cantabria Colección Privada',
+      API_description: 'Red wine Barrel. 18 months in French and American oak barrels.',
+      API_characteristics: 'Sierra Cantabria Colección Privada is a red wine made by Bodega Sierra Cantabria in San Vicente de la Sonsierra, a small town located at the foot of Sierra Cantabria in D.O. La Rioja.',
+      API_denomination_of_origen: 'D.O.Ca. Rioja',
+      API_winery: 'Sierra Cantabria',
+      API_variety: 'Tempranillo',
+      API_volume: '75 cl.',
+      API_alcohol: '14.5%',
+      API_serve: '16ºC',
+      API_rating: 93,
+      API_rating_entity: 'Peñin',
+      API_price: 25.30,
+      API_price_currency: '€',
+      API_url_picture: 'wine_11.jpg'
+    });
+
+    var wineRecord12 = new WineModel({
+      API_id: '12',
+      API_winename: 'Gotim Bru',
+      API_description: 'Red wine Barrel.',
+      API_characteristics: 'Gotim Bru is a red wine from the D.O Costers del Segre produced by Castell del Remei, which is located in Penelles, in Lleida.',
+      API_denomination_of_origen: 'D.O. Costers del Segre',
+      API_winery: 'Castell del Remei',
+      API_variety: 'Cabernet Sauvignon, Syrah, Garnacha Tinta, Tempranillo, Merlot',
+      API_volume: '75 cl.',
+      API_alcohol: '14.0%',
+      API_serve: '16ºC',
+      API_rating: 90,
+      API_rating_entity: 'Peñin',
+      API_price: 7.80,
+      API_price_currency: '€',
+      API_url_picture: 'wine_12.jpg'
+    });
+
+    var wineRecord13 = new WineModel({
+      API_id: '13',
+      API_winename: 'Petit Baldomà Blanc',
+      API_description: 'White wine Young.',
+      API_characteristics: 'Baldomà Petit Blanc is a wine from Costers del Segre prepared by the Vall de Baldomar cellar. This wine is a blend of Macabeo, Riesling and Gewürztraminer.',
+      API_denomination_of_origen: 'D.O. Costers del Segre',
+      API_winery: 'Vall de Baldomar',
+      API_variety: 'Macabeo, Riesling, Gewürztraminer',
+      API_volume: '75 cl.',
+      API_alcohol: '12.5%',
+      API_serve: '16ºC',
+      API_rating: 87,
+      API_rating_entity: 'Peñin',
+      API_price: 5.15,
+      API_price_currency: '€',
+      API_url_picture: 'wine_13.jpg'
+    });
+
+    var wineRecord14 = new WineModel({
+      API_id: '14',
+      API_winename: 'Parés Baltà Calcari',
+      API_description: 'White wine Young.',
+      API_characteristics: 'Pares Balta Calcari is a white wine from Penedès produced by the Pares Balta winery. It is a varietal Xarelo.',
+      API_denomination_of_origen: 'D.O. Penedès',
+      API_winery: 'Parés Baltà',
+      API_variety: 'Xarel·lo',
+      API_volume: '75 cl.',
+      API_alcohol: '12.0%',
+      API_serve: '16ºC',
+      API_rating: 90,
+      API_rating_entity: 'Peñin',
+      API_price: 8.45,
+      API_price_currency: '€',
+      API_url_picture: 'wine_14.jpg'
+    });
+
+    var wineRecord15 = new WineModel({
+      API_id: '15',
+      API_winename: 'Baluarte Verdejo 2016',
+      API_description: 'White wine Young.',
+      API_characteristics: 'Baluarte Verdejo is a white wine from Rueda produced by the Gran Feudo winery.',
+      API_denomination_of_origen: 'D.O. Rueda',
+      API_winery: 'Gran Feudo',
+      API_variety: 'Verdejo',
+      API_volume: '75 cl.',
+      API_alcohol: '12.5%',
+      API_serve: '18ºC',
+      API_rating: 89,
+      API_rating_entity: 'Peñin',
+      API_price: 6.05,
+      API_price_currency: '€',
+      API_url_picture: 'wine_15.jpg'
+    });
+
+    var wineRecord16 = new WineModel({
+      API_id: '16',
+      API_winename: 'Garnacha de Fuego',
+      API_description: 'Red wine Young.',
+      API_characteristics: 'Garnacha de Fuego is a red wine from D.O. Calatayud produced by Bodegas Breca, Jorge Ordoñez project with a collaboration from oenologists Sarah Morris and Iwo Jakimowicz.',
+      API_denomination_of_origen: 'D.O. Calatayud',
+      API_winery: 'Jorge Ordoñez',
+      API_variety: 'Garnacha Tinta',
+      API_volume: '75 cl.',
+      API_alcohol: '14.5%',
+      API_serve: '15ºC',
+      API_rating: 88,
+      API_rating_entity: 'Peñin',
+      API_price: 4.80,
+      API_price_currency: '€',
+      API_url_picture: 'wine_16.jpg'
+    });
+
+    var wineRecord17 = new WineModel({
+      API_id: '17',
+      API_winename: 'Clos Galena',
+      API_description: 'Red wine Young.',
+      API_characteristics: 'Clos Galena is a red wine from the D.O. Priorat produced by the Clos Galena – Domini de la Cartoixa winery. It is a blend of the Cabernet Sauvignon, Syrah, Garnacha Tinta and Cariñena varieties.',
+      API_denomination_of_origen: 'D.O.Q. Priorat',
+      API_winery: 'Clos Galena - Domini de la Cartoixa',
+      API_variety: 'Cabernet Sauvignon, Syrah, Garnacha Tinta, Cariñena',
+      API_volume: '75 cl.',
+      API_alcohol: '14.5%',
+      API_serve: '16ºC',
+      API_rating: 91,
+      API_rating_entity: 'Peñin',
+      API_price: 34.40,
+      API_price_currency: '€',
+      API_url_picture: 'wine_17.jpg'
+    });
+
+    var wineRecord18 = new WineModel({
+      API_id: '18',
+      API_winename: 'Glorioso Crianza',
+      API_description: 'Red wine Young.',
+      API_characteristics: 'Glorioso Crianza is a red wine from the Rioja made by Bodegas Palacio. The Glorioso line was created in 1928 and is Bodegas Palacio`s most popular brand.',
+      API_denomination_of_origen: 'D.O.Ca. Rioja',
+      API_winery: 'Palacio',
+      API_variety: 'Tempranillo',
+      API_volume: '75 cl.',
+      API_alcohol: '15.0%',
+      API_serve: '14ºC',
+      API_rating: 89,
+      API_rating_entity: 'Peñin',
+      API_price: 5.90,
+      API_price_currency: '€',
+      API_url_picture: 'wine_18.jpg'
+    });
+
+    var wineRecord19 = new WineModel({
+      API_id: '19',
+      API_winename: 'Javier Revert Sensal',
+      API_description: 'Red wine Barrel.',
+      API_characteristics: 'Javier Revert Sensal is a red wine from the D.O. Valencia produced by the Javier Revert Viticultor winery.',
+      API_denomination_of_origen: 'D.O. Valencia',
+      API_winery: 'Javier Revert Viticultor',
+      API_variety: 'Garnacha Tintorera, Monastrell',
+      API_volume: '75 cl.',
+      API_alcohol: '14.0%',
+      API_serve: '16ºC',
+      API_rating: 91,
+      API_rating_entity: 'Peñin',
+      API_price: 19.00,
+      API_price_currency: '€',
+      API_url_picture: 'wine_19.jpg'
+    });
+
+    var wineRecord20 = new WineModel({
+      API_id: '20',
+      API_winename: 'Manzanilla Pasada Pastora',
+      API_description: 'Fortified wine.',
+      API_characteristics: 'Manzanilla Pasada Pastora is a fortified wine from the D.O. Manzanilla - Sanlúcar de Barrameda produced by the Barbadillo winery.',
+      API_denomination_of_origen: 'D.O. Manzanilla - Sanlúcar de Barrameda',
+      API_winery: 'Barbadillo',
+      API_variety: 'Palomino',
+      API_volume: '75 cl.',
+      API_alcohol: '15.0%',
+      API_serve: '',
+      API_rating: 94,
+      API_rating_entity: 'Peñin',
+      API_price: 12.10,
+      API_price_currency: '€',
+      API_url_picture: 'wine_20.jpg'
+    });
+
+
     wineRecord1.save().then(function() {
       assert(wineRecord1.isNew === false);
       wineRecord2.save().then(function() {
@@ -234,7 +415,37 @@ describe('Wine collection tests', function(){
                       assert(wineRecord9.isNew === false);
                       wineRecord10.save().then(function() {
                         assert(wineRecord10.isNew === false);
-                        done();
+                        wineRecord11.save().then(function() {
+                          assert(wineRecord11.isNew === false);
+                          wineRecord12.save().then(function() {
+                            assert(wineRecord12.isNew === false);
+                            wineRecord13.save().then(function() {
+                              assert(wineRecord13.isNew === false);
+                              wineRecord14.save().then(function() {
+                                assert(wineRecord14.isNew === false);
+                                wineRecord15.save().then(function() {
+                                  assert(wineRecord15.isNew === false);
+                                  wineRecord16.save().then(function() {
+                                    assert(wineRecord16.isNew === false);
+                                    wineRecord17.save().then(function() {
+                                      assert(wineRecord17.isNew === false);
+                                      wineRecord18.save().then(function() {
+                                        assert(wineRecord18.isNew === false);
+                                        wineRecord19.save().then(function() {
+                                          assert(wineRecord19.isNew === false);
+                                          wineRecord20.save().then(function() {
+                                            assert(wineRecord20.isNew === false);
+                                            done();
+                                          });
+                                        });
+                                      });
+                                    });
+                                  });
+                                });
+                              });
+                            });
+                          });
+                        });
                       });
                     });
                   });

@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
@@ -20,256 +19,147 @@
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
         <!--[if gte IE 9]>
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
-		<![endif]-->
+		    <![endif]-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <link href="http://fonts.googleapis.com/css?family=Cardo:400,400italic" rel="stylesheet" type="text/css">
         <link href="css/font-cardo.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="/img/favicon.png" />
     </head>
 
-    <body>
+    <body ng-app="devApp" ng-controller="DevAppController">
     	<div class="loader">
     		<div class="spinner">
-			  <div class="double-bounce1"></div>
-			  <div class="double-bounce2"></div>
-			</div>
+  			  <div class="double-bounce1"></div>
+  			  <div class="double-bounce2"></div>
+			   </div>
     	</div>
-				
-		<div class="nav-container">
-			<nav class="centered-logo top-bar">
-				<div class="container">
-				
-					
-					
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<a href="index.html">
-							<img class="logo logo-dark" alt="Logo" src="img/logotype_dark.png"></a>
-						</div>
-					</div>
-				
-				
-					<div class="row nav-menu">
-					
-						<div class="col-sm-12 columns text-center">
-							<ul class="menu">
-								<a></a><li><a href="index.html" target="_self">Home</a></li><li><a href="find.html" target="_self">Find a wine</a></li><li><a href="developer.html" target="_self">Developer </a></li><li><a href="about.html" target="_self">About us</a></li><li><a href="contact.html" target="_self">Contact</a></li>
-							</ul>
-		
-						</div>
-					</div>
-					
-					<div class="mobile-toggle">
-						<i class="icon icon_menu"></i>
-					</div>
-					
-				</div>
-				<div class="bottom-border"></div>
-			</nav>
-		
+  		<div class="nav-container">
+  			<nav class="centered-logo top-bar">
+  				<div class="container">
+  					<div class="row">
+  						<div class="col-sm-12 text-center">
+  							<a href="index.html">
+  							  <img class="logo logo-dark" alt="Logo" src="img/logotype_white.png">
+                </a>
+  						</div>
+  					</div>
+  					<div class="row nav-menu">
+  						<div class="col-sm-12 columns text-center">
+  							<ul class="menu">
+  								<li><a href="index.html" target="_self">Home</a></li>
+                  <li><a href="find.html" target="_self">Find a wine</a></li>
+                  <li><a href="developer.html" target="_self">Developer </a></li>
+                  <li><a href="about.html" target="_self">About us</a></li>
+                  <li><a href="contact.html" target="_self">Contact</a></li>
+  							</ul>
+  						</div>
+  					</div>
+  					<div class="mobile-toggle">
+  						<i class="icon icon_menu"></i>
+  					</div>
+  				</div>
+  				<div class="bottom-border"></div>
+  			</nav>
+  		</div>
+  		<div class="main-container">
+  		<section class="product-right wood-divider">
+  				<div class="background-image-holder">
+  					<img class="background-image" alt="Background Image" src="img/process_image.jpg">
+  				</div>
+  				<div class="container align-vertical">
+  					<div class="row">
+  						<div class="col-md-12">
+  							<div class="row">
+  								<div class="col-sm-12">
+  									<h1>WINE API DB Documentation</h1>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-sm-12">
+  									<p class="lead">
+  										Our API requires moderate technical knowledge, but allows you greater flexibility to customize the search and presentation of our data on your site or app.
+  									</p>
+  								</div>
+  							</div>
+                <div class="row">
+  								<div class="col-sm-12">
+                    <h2>Description</h2>
+  									<p class="lead">
+                      Our API is a powerful way of plugging Wine API DB data directly into your website or application. It may be used by wine apps, websites, blogs, market research companies and those specializing in wine selling.
+                      The API is a RESTful web service. Queries are passed to it via URLs constructed and submitted using the HTTP protocol (specifically the GET method), just like a web page. Results can be returned in either XML or JSON format.
+  									</p>
+  								</div>
+  							</div>
+                <div class="row">
+  								<div class="col-sm-12">
+                    <h2>Url API</h2>
+  									<p class="lead">
+                      The url of the API is <a href="http://localhost:4000/api/wines">http://www.wineapidb.com/api/</a> <br>
+                      Example: Getting all the wines from the Finca Winery<br>
+                      <a href="http://localhost:4000/api/wines?wineid=anti&do=La&winery=Finca">www.wineapidb.com/api/wines</a>
+  									</p>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+  			<section class="feature-selector">
+  				<div class="container">
+  					<ul class="selector-content">
+  						<li class="clearfix active">
+  							<div class="row">
+  								<div class="col-sm-6 text-center">
+  									<h1>URL Encoding & Prohibited Characters</h1>
+  								</div>
+                  <div class="col-sm-6 text-center">
+  									<h1>Parameters</h1>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-sm-6">
+  									<p class="lead">
+                      - Latin1 (ISO-8859-1) is the standard encoding used for our API.<br>
+                      - 8-bit characters must be encoded with percent encoding ('URL escaping').<br>
+                      - Percent encoding must be used for all special characters (e.g. â, é, í, ò, ü).<br>
+                      - Percent and slash symbols used in any way other than percent encoding will cause requests to fail.<br>
+                      - Parameters are case-sensitive.
+  									</p>
+  								</div>
+  								<div class="col-sm-6">
+  									<p class="lead">
+                        Parameters are case-sensitive, and are passed as querystrings to our base API URL. <br>
+                        <strong>- wineid</strong>: This parameter filters by the name of the wine.<br>
+                        <strong>- do</strong>: This parameter filters by the denomination of origen of the wine.<br>
+                        <strong>- winery</strong>: This parameter filters by the winery of the wine.
+  									</p>
+  								</div>
+  							</div>
+  						</li>
+  					</ul>
+  				</div>
+  			</section>
+  		</div>
+  		<div class="footer-container">
+  			<bottom></bottom>
+  		</div>
 
-		
-		</div>
-		
-		<div class="main-container">
-		<section class="product-right wood-divider">
-				<div class="background-image-holder">
-					<img class="background-image" alt="Background Image" src="img/process_image.jpg">
-				</div>
-				
-				<div class="container align-vertical">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="row">
-								<div class="col-sm-12">
-									<h1>WINE API DB Documentation</h1>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12">
-									<p class="lead">
-										Our API requires moderate technical knowledge, but allows you greater flexibility to customize the search and presentation of our data on your site or app.
-									</p>	
-								</div>
-							</div>
-                            <div class="row">
-								<div class="col-sm-12">
-                                	<h2>Description</h2>
-									<p class="lead">										
-Our API is a powerful way of plugging Wine API DB data directly into your website or application. It may be used by wine apps, websites, blogs, market research companies and those specializing in wine selling. 
-The API is a RESTful web service. Queries are passed to it via URLs constructed and submitted using the HTTP protocol (specifically the GET method), just like a web page. Results can be returned in either XML or JSON format.
-									</p>	
-								</div>
-							</div>
-                            <div class="row">
-								<div class="col-sm-12">
-                                	<h2>Url API</h2>
-									<p class="lead">										
-The url of the API is <a href="http://localhost:4000/api/">http://localhost:4000/api/</a> <br>
-Example:<br>
-<a href="http://localhost:4000/api/wines?wineid=anti&do=La&winery=Finca">http://localhost:4000/api/wines?wineid=anti&do=La&winery=Finca</a>
-
-									</p>	
-								</div>
-							</div>                            
-						</div>
-					</div>
-				</div>
-				
-				
-			</section>
-			
-			<section class="feature-selector">
-				
-				<div class="container">
-					<ul class="selector-content">
-						<li class="clearfix active">
-							<div class="row">
-								<div class="col-sm-6 text-center">
-									<h1>URL Encoding & Prohibited Characters</h1>
-								</div>
-                                <div class="col-sm-6 text-center">
-									<h1>Parameters</h1>
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="col-sm-6">
-									<p class="lead">
-- Latin1 (ISO-8859-1) is the standard encoding used for our API.<br>
-- 8-bit characters must be encoded with percent encoding ('URL escaping').<br>
-- Percent encoding must be used for all special characters (e.g. â, é, í, ò, ü).<br>
-- Percent and slash symbols used in any way other than percent encoding will cause requests to fail.<br>
-- Parameters are case-sensitive.
-
-									</p>	
-								</div>
-							
-								<div class="col-sm-6">
-									<p class="lead">
-Parameters are case-sensitive, and are passed as querystrings to our base API URL. <br>
-<strong>- wineid</strong>: This parameter filters by the name of the wine.<br>
-<strong>- do</strong>: This parameter filters by the denomination of origen of the wine.<br>
-<strong>- winery</strong>: This parameter filters by the winery of the wine.
-
-									</p>	
-								</div>
-							</div>
-						</li>
-						
-						<li class="clearfix">
-							<div class="row">
-								<div class="col-sm-12 text-center">
-									<h1>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</h1>
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="col-sm-6">
-									<p class="lead">
-										Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>	
-								</div>
-							
-								<div class="col-sm-6">
-									<p class="lead">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>	
-								</div>
-							</div>
-						</li>
-						
-						<li class="clearfix">
-							<div class="row">
-								<div class="col-sm-12 text-center">
-									<h1>Enim minima veniam quis nostrum exercitationem ullam corporis</h1>
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="col-sm-6">
-									<p class="lead">
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
-									</p>	
-								</div>
-							
-								<div class="col-sm-6">
-									<p class="lead">
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
-									</p>	
-								</div>
-							</div>
-						</li>
-						
-						<li class="clearfix">
-							<div class="row">
-								<div class="col-sm-12 text-center">
-									<h1>Duis aute irure dolor reprehenderit voluptate velit cillum</h1>
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="col-sm-6">
-									<p class="lead">
-										Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
-									</p>	
-								</div>
-							
-								<div class="col-sm-6">
-									<p class="lead">
-										Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-									</p>	
-								</div>
-							</div>
-						</li>
-						
-		
-					</ul>
-				</div>
-			</section>
-			
-		</div>
-		
-		<div class="footer-container">
-
-			<footer class="short bg-secondary-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<ul class="social-icons">
-								<li>
-									<a href="policies.html">
-										<font color="a87f97"><span style="font-size: 14px">Policies</span></font>
-									</a>
-								</li>
-								
-								<li>
-									<a href="terms.html">
-										<font color="a87f97"><span style="font-size: 14px">Terms of use</span></font>
-									</a>
-								</li>
-							</ul>
-							<br>
-							<br>
-							<br>
-							<font color="a87f97">© Copyright 2017 Wine API DB. All rights reserved.</font>.</span>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-				
-		<script src="https://www.youtube.com/iframe_api"></script>
-		<script src="js/jquery.min.js"></script>
-        <script src="js/jquery.plugin.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.flexslider-min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/skrollr.min.js"></script>
-        <script src="js/spectragram.min.js"></script>
-        <script src="js/scrollReveal.min.js"></script>
-        <script src="js/isotope.min.js"></script>
-        <script src="js/twitterFetcher_v10_min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
-        <script src="js/scripts.js"></script>
+  		<script src="https://www.youtube.com/iframe_api"></script>
+  		<script src="js/jquery.min.js"></script>
+      <script src="js/jquery.plugin.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.flexslider-min.js"></script>
+      <script src="js/smooth-scroll.min.js"></script>
+      <script src="js/skrollr.min.js"></script>
+      <script src="js/spectragram.min.js"></script>
+      <script src="js/scrollReveal.min.js"></script>
+      <script src="js/isotope.min.js"></script>
+      <script src="js/twitterFetcher_v10_min.js"></script>
+      <script src="js/lightbox.min.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+      <script src="js/angular/devcontroller.js"></script>
     </body>
 </html>
-				

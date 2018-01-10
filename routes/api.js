@@ -2,19 +2,7 @@ const express = require('express');
 const router = express.Router();
 const WineModel = require('../models/wine_model');
 
-// set reply to "localhost:4000/" get request
-router.get('/', function(req, res) {
-  console.log('GET request');
-
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,contenttype'); // If needed
-  res.setHeader('Access-Control-Allow-Credentials', true); // If needed
-
-  res.send("<html><body><h1>Welcome to Wine API DB</h1><p>by J.M. Sobrinos</p></body></html>");
-});
-
-// set reply to "localhost:4000/api/wines?wineid=value get request
+// set reply to "localhost:4000/api/wines?pwineid=value&pdo=value&pwinery=value get request
 // get wines list from the db
 router.get('/wines', function(req, res, next) {
   console.log('GET /wines request');

@@ -3,6 +3,15 @@ Website where users may:
 - find wines or
 - discover how to use a simple and easy RESTful JSON API to access to a wine collection.
 
+# Technologies
+- MongoDB
+- Mocha
+- NodeJS
+- Express
+- Body-Parser
+- AngularJS
+- Bootstrap
+
 # Instructions
 Steps:
 - download the code from this website

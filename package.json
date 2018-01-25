@@ -4,7 +4,8 @@
   "description": "Website where users may:\r - find wines or \r - discover how to use a simple and easy RESTful JSON API to access to a wine collection.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

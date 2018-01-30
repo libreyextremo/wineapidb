@@ -34,4 +34,23 @@ router.get('/wines', function(req, res, next) {
 
 });
 
+// set reply to "server:4000/api/wine?id=2
+// get wine from the db
+router.get('/wine', function(req, res, next) {
+  console.log('GET /api/wine request ' + 'id: ' + req.query.id);
+
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,contenttype'); // If needed
+  res.setHeader('Access-Control-Allow-Credentials', true); // If needed
+
+  let pid = req.query.id;
+  if (pid == null) pid = '';
+
+  WineModel.findOne({API_id: pid}).then(function(wine){
+      res.send(wine);
+  }).catch(next);
+
+});
+
 module.exports = router;

@@ -6,7 +6,7 @@ myApp.controller("FindAppController", ["$scope", "$http", function($scope, $http
 			.then(function(res) {
 				$scope.wines = res.data;
 			}, function(res) {
-				$scope.wines = [{name: "Error!!" + res.status}];
+				console.log("Error!!" + res.status);
 			});
 		}]
 	);

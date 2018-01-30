@@ -79,11 +79,9 @@
   					<div class="row" ng-show="wines.length">
                       <div ng-repeat="wine in wines | filter: searchTerm" class="col-sm-4">
                         <div class="team-1-member">
-                            <a href="wine.html?id={{wine.API_id}}">
-                            	<img alt="Team Member" class="background-image" ng-src="img/{{wine.API_url_picture}}" width="172" height="172"/>
-                            	<h5>{{wine.API_winename}}</h5>
-                            </a>
-                            <span>{{wine.API_winery}}</span><br>
+                            <img alt="Team Member" class="background-image" ng-src="img/{{wine.API_url_picture}}" width="172" height="172"/>
+                            <a href="wine.html?id={{wine.API_id}}"><h5>{{wine.API_winename}}</h5>
+                            <span>{{wine.API_winery}}</span></a><br>
                         </div>
                       </div>
   					</div>

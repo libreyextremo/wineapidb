@@ -1,5 +1,5 @@
 var myAppAbout = angular.module("aboutApp", []);
-myAppAbout.controller("AboutAppController", ["$scope", function($scope, $http) {
+myAppAbout.controller("AboutAppController", ["$scope", function ($scope, $http) {
       $scope.position = 0;
 		}]
 	);
